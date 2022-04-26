@@ -5,25 +5,26 @@ public class AccountOperations {
         a.Description = 'Default description';
         return a;
     }
-}       //New methods introduced by Developer 1 working on the US-001
-    public static Account setDefaultBillingAddress(Account a){//DEV 1
-        a.billingstreet = 'Basauri, 6'; 
-        a.billingstate = 'Madrid'; 
-        a.billingpostalcode ='28023'; 
+    }
+       //New methods introduced by Developer 1 working on the US-003
+    public static Account setDefaultBillingAddress(Account a){
+        a.billingstreet = '535 Mission Street, 15th floor'; // DEV 1 updates
+        a.billingstate = 'California';
+        a.billingpostalcode ='94105'; // DEV 2 updates
         return a;
     }
-    public static Account setDefaultShippingAddress(Account a){//DEV 1
-        a.shippingstreet = 'Basauri, 6'; 
-        a.shippingstate = 'Madrid';
-        a.shippingpostalcode ='28023';
+    public static Account setDefaultShippingAddress(Account a){
+        a.shippingstreet = '535 Mission Street, 15th floor'; // DEV 1 updates
+        a.shippingstate = 'California';
+        a.shippingpostalcode ='94105'; // DEV 2 updates
         return a;
     }
     public static Account setDefaultPhone(Account a) {//DEV 1 
-        a.Phone='688456789'; //DEV1
+        a.Phone='925777888'; // DEV 2 updates
         return a;
     }
     public static Account setDefaultURL(Account a) { //DEV 1
-        a.website = 'www.copa.do'; //Dev1
+        a.website = 'www.copado.com'; // DEV 2 updates
         return a;
     }
 }
