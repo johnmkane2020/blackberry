@@ -6,7 +6,7 @@ public class AccountOperations {
             return a;
         }
     }
-       //New methods introduced by Developer 1 working on the US-003
+       //New methods introduced by Developer 1 working on the US-003 THIS IS A CLI PROOF OF CONCEPT
     public static Account setDefaultBillingAddress(Account a){
         a.billingstreet = '535 Mission Street, 15th floor'; // DEV 1 updates
         a.billingstate = 'California';
