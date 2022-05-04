@@ -11,7 +11,7 @@ public with sharing class AccountService {
 
     public static List<Account> getAccountByName(String name) {
 
-        return [SELECT Id, Name FROM Account WHERE Name = :name];
+        return [SELECT Id, Name, Industry FROM Account WHERE Name = :name];
     }
 
 }
