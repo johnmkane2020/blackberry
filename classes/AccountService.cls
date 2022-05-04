@@ -9,4 +9,9 @@ public with sharing class AccountService {
         return [SELECT Id, Name FROM Account WHERE Id = :accountId];
     }
 
+    public static List<Account> getAccountByName(String name) {
+
+        return [SELECT Id, Name FROM Account WHERE Name = :name];
+    }
+
 }
