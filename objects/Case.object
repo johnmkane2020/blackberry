@@ -221,6 +221,81 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Category_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Category 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cat A</fullName>
+                    <default>false</default>
+                    <label>Cat A</label>
+                </value>
+                <value>
+                    <fullName>Cat B</fullName>
+                    <default>false</default>
+                    <label>Cat B</label>
+                </value>
+                <value>
+                    <fullName>Cat C</fullName>
+                    <default>false</default>
+                    <label>Cat C</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Category_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Category 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Category_1__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cat D</fullName>
+                    <default>false</default>
+                    <label>Cat D</label>
+                </value>
+                <value>
+                    <fullName>Cat E</fullName>
+                    <default>false</default>
+                    <label>Cat E</label>
+                </value>
+                <value>
+                    <fullName>Cat F</fullName>
+                    <default>false</default>
+                    <label>Cat F</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Cat A</controllingFieldValue>
+                <valueName>Cat D</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cat A</controllingFieldValue>
+                <valueName>Cat E</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cat B</controllingFieldValue>
+                <valueName>Cat F</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>ClosedDate</fullName>
         <trackTrending>false</trackTrending>
     </fields>
