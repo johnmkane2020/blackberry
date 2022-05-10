@@ -14,4 +14,9 @@ public with sharing class AccountService {
         return [SELECT Id, Name, Industry FROM Account WHERE Name = :name];
     }
 
+    public static List<Account> getAccountByIndustry(String industry) {
+
+        return [SELECT Id, Name FROM Account WHERE Industry = :industry];
+    }
+
 }
