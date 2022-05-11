@@ -9,8 +9,13 @@ private class AccountServiceTest {
     static void setupTestData() {
         Account a = new Account();
         a.Name = 'AccountServiceTest';
+        a.Industry = 'Government';
 
-        insert a;
+        Account b = new Account();
+        b.Name = 'AccountServiceNegativeTest';
+        b.Industry = 'Energy';
+
+        insert new List<Account>{ a, b };
     }
 
     @IsTest
@@ -33,5 +38,15 @@ private class AccountServiceTest {
         Test.stopTest();
 
         System.assertEquals(1, retrievedAccountsByName.size(), 'Expected a single Account to be returned');
+    }
+
+    @IsTest
+    static void testGetAccountByIndustry() {
+
+        Test.startTest();
+        List<Account> retrievedAccountsByIndustry = AccountService.getAccountByIndustry('Government');
+        Test.stopTest();
+
+        System.assertEquals(1, retrievedAccountsByIndustry.size());
     }
 }
