@@ -16,7 +16,7 @@ public with sharing class AccountService {
 
     public static List<Account> getAccountByIndustry(String industry) {
 
-        return [SELECT Id, Name FROM Account WHERE Industry = :industry WITH SECURITY_ENFORCED];
+        return [SELECT Id, Name, COPADO_9__c FROM Account WHERE Industry = :industry WITH SECURITY_ENFORCED];
     }
 
 }
