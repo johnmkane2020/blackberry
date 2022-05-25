@@ -1,5 +1,5 @@
 @IsTest
-private class ContactsSelectorTest {
+private class ContactsServiceTest {
     @testSetup
     static void setupData() {
         Contact testContact = new Contact(FirstName = 'Test', LastName = 'Copado', Email = 'copadotest@email.com', Phone = '1111111111');
@@ -7,10 +7,10 @@ private class ContactsSelectorTest {
     }
 
     @IsTest
-    static void testGetContactsByLastName() {
+    static void testCollectEmailsByLastName() {
         Test.startTest();
-        List<Contact> cons = ContactsSelector.getContactsByLastName('Copado');
+        Set<String> emails = ContactsService.collectEmailsByLastName('Copado');
         Test.stopTest();
-        System.assert(cons.size() > 0, 'Test is failed due to not retrieve any contact by lastname.');
+        System.assert(emails.contains('copadotest@email.com'), 'Email is not retrived successfully.');
     }
 }
