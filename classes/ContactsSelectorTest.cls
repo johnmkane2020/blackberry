@@ -13,12 +13,4 @@ private class ContactsSelectorTest {
         Test.stopTest();
         System.assert(cons.size() > 0, 'Test is failed due to not retrieve any contact by lastname.');
     }
-
-    @IsTest
-    static void testGetContactsByFirstName() {
-        Test.startTest();
-        List<Contact> cons = ContactsSelector.getContactsByFirstName('Test');
-        Test.stopTest();
-        System.assert(cons.size() > 0, 'Test is failed due to not retrieve any contact by firstname.');
-    }
 }
