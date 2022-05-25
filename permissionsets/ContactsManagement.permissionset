@@ -20,6 +20,11 @@
         <field>Contact.Birthdate</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Department</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Contacts Management</label>
     <license>Salesforce</license>
