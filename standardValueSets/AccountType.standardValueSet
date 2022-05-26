@@ -32,11 +32,6 @@
         <label>Partner</label>
     </standardValue>
     <standardValue>
-        <fullName>Press</fullName>
-        <default>false</default>
-        <label>Press</label>
-    </standardValue>
-    <standardValue>
         <fullName>Prospect</fullName>
         <default>false</default>
         <label>Prospect</label>
@@ -50,5 +45,10 @@
         <fullName>Other</fullName>
         <default>false</default>
         <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Distributor</fullName>
+        <default>false</default>
+        <label>Distributor</label>
     </standardValue>
 </StandardValueSet>
